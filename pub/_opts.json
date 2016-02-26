@@ -1,0 +1,621 @@
+{
+  "cli": true,
+  "dir": ".",
+  "outputOnly": true,
+  "no-watch": true,
+  "no-sockets": true,
+  "editor": true,
+  "user": "jldec",
+  "basedir": "/Users/jldec/pub/hamphackdeck",
+  "pkgJson": {
+    "name": "pub-sample-deck",
+    "version": "2.0.2",
+    "description": "sample presentation with shower theme for pub-server",
+    "main": "pub-config.js",
+    "dependencies": {
+      "pub-server": "^1.10.1",
+      "pub-theme-shower-ribbon": "^1.7.2"
+    },
+    "devDependencies": {},
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/jldec/pub-sample-deck.git"
+    },
+    "scripts": {
+      "develop": "pub",
+      "generate": "pub -O",
+      "static": "pub -S out"
+    },
+    "author": "jurgen leschner",
+    "license": "MIT"
+  },
+  "pkgName": "pub-sample-deck",
+  "sources": [
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/markdown",
+      "glob": "**/*.md",
+      "writable": true,
+      "name": "markdown",
+      "type": "FILE",
+      "tmp": "/Users/jldec/.tmp/markdown",
+      "watch": {},
+      "fragmentDelim": true,
+      "files": [
+        {
+          "path": "/hamphack2016.md",
+          "text": "---- / ----\nname: Git, GitHub, GitHub Pages\n\n---- cover ----\n\n## Git, GitHub, GitHub Pages\nJürgen Leschner @jldec\n![](/images/imalive.png)\n\n---- ----\nbackground-image: /images/stallman2.png\n\n## Back in the 80's\n\n> Free software is software that respects your freedom and the social solidarity of your community.  \nSo it's free as in freedom.\n\n#### Richard Stallman\n- GNU 1983\n- GPL 1989\n\n---- ----\nbackground-image: /images/linus1.png\n\n# Then came Linus\n\n> I'm doing a (free) operating system  \njust a hobby  \nwon't be big and professional\n\n#### Linux Kernel 1991\n\n\n---- ----\n\n> Good programmers worry about data structures  \n and their relationships.\n\n![](/images/gitlogo.svg \"width=400\")\n![](/images/linus2.jpeg \"align=right width=300\")\n- Distributed Version Control\n- Linus Torvalds\n- April-December 2005\n\n---- ----\nbackground-image: /images/crew.jpg\n\n# git demo\n```diff\n- git init\nwrite some code\n- git add\n- git commit\nwrite some more code\n- git status\n- git add\n- git commit\n- git log\n```\n\n---- ----\nbackground-image: /images/github-website-2.png\n\n# GitHub\n\n\n---- ----\nbackground-image: /images/octocat.png\n\n# GitHub Demo\n\n```diff\nFirst create a new repo at github.com\n- git remote add origin <github-repo-url>\n- git push\nSomeone else on a different machine\n- git clone <github-repo-url>\n- git push\nHack on the code together\nUse branches and pull requests to coordinate\n```\n\n\n---- ----\nbackground-image: /images/cover.jpg\n\n# GitHub Pages\n\nPublish a website from your GitHub repo\n\n---- ----\nbackground-image: /images/icy.jpg\n\n\n# GitHub Pages Demo\n\n```diff\n- git init\n- git branch -m gh-pages\nPush to new GitHub repo\n\nOr...\nName your repo 'username.github.io'\n```\n\n---- ----\nbackground-image: /images/jekyll.png\n\n#### Jekyll is a blog-aware, static site generator written in Ruby\n\n---- ----\nbackground-image: /images/river.jpg\n\n# Jekyll demo\n```diff\n- gem install jekyll\n- jekyll new .\n- jekyll serve\nin _config.yml\n  baseurl: /hamphack\n  kramdown:\n    input: GFM\n- git add -A\ngit commit, push etc.\n```\n\n---- ----\nbackground-image: /images/plane.jpg\n\n# pub-server demo\n\n```diff\nthis requires node.js\n- npm install -g pub-server\n- git clone https://github.com/jldec/pub-sample-deck.git pub;\n- cd pub; pub\nedit markdown, watch http://localhost:3001/\n- pub -O\n- cd out\n- git init\n- git branch -m gh-pages\n```\n\n---- ----\nbackground-image: /images/sky.png\n\n# Other Static Site Generators\n\nhttps://www.staticgen.com/\n\ne.g. Hugo, Hexo, Pelican, Brunch, Middleman, Docpad, Harp\n\n---- ----\n\n# Time for\n\n![](/images/question.jpeg \"width=800\")\n\n---- ----\n\n# Thank You!\n\n---- ----\n\n# GitHub\n- https://github.com/\n- https://git-scm.com/\n- https://help.github.com/\n\n---- ----\n\n# Command Line installers\n- git command line utilities included with OSX since v10.9 (Mavericks)\n- https://github.com/git-for-windows/git\n\n---- ----\n\n# GUI (OSX and Windows)\n- https://desktop.github.com/\n\n---- ----\n\n# Online Git Tutorials and more\n\nhttps://try.github.io\n\nhttps://training.github.com/kit/downloads/github-git-cheat-sheet.pdf\n\nhttps://github.com/blog/2019-how-to-undo-almost-anything-with-git\n\nhttps://ja.atlassian.com/dms/wac/images/landing/git/atlassian_git_cheatsheet.pdf\n\n---- ----\n\n# Read about GitHub Pages\n- https://medium.com/@dfosco/git-for-designers-856c434716e#.9rnz1ulu7\n- http://readwrite.com/2013/11/27/github-pages-explained\n\n---- ----\n\n# GitHub Pages links\n- https://pages.github.com/\n- https://help.github.com/categories/github-pages-basics/\n- https://help.github.com/categories/github-pages-features/\n- https://help.github.com/categories/github-pages-troubleshooting/\n- https://guides.github.com/features/mastering-markdown/\n\n---- ----\n\n# Jekyll\n- Static Site Generator written in Ruby\n- Integrated into GitHub Pages\n- http://jekyllrb.com\n- https://github.com/jekyll/jekyll\n- https://help.github.com/articles/configuring-jekyll/\n\n---- ----\n\n# Pub server\n- Static Site Generator written in JavaScript\n- Personal project - not GitHub sponsored or integrated\n- https://github.com/jldec/pub-server\n- https://jldec.github.io/pub-doc/\n\n---- ----\n\n# YouTube\n\n- [2001 The Code: Story of Linux documentary](https://www.youtube.com/watch?v=XMm0HsmOTFI)\n- [2012 Aalto Talk with Linus Torvalds](https://www.youtube.com/watch?v=MShbP3OpASA)\n- [2007 Tech Talk: Linus Torvalds on git](https://www.youtube.com/watch?v=4XpnKHJAok8)\n- [2008 Chris Wanstrath Interview at RailsConf](https://www.youtube.com/watch?v=-Reg0yhJw4s)\n"
+        }
+      ]
+    },
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/templates",
+      "_pkg": "pub-theme-shower-ribbon",
+      "name": "templates",
+      "type": "FILE",
+      "watch": false,
+      "files": [
+        {
+          "path": "/default.hbs",
+          "text": "<header class=\"caption\">\n{{{html}}}\n</header>\n\n{{#each _fragments}}\n<section id=\"{{fragmentID}}\" class=\"slide{{class}}\"><div>\n{{{html}}}\n{{{background-image}}}\n</div></section>\n\n{{/each}}\n\n<div class=\"progress\"><div></div></div>\n"
+        },
+        {
+          "path": "/doc-layout.hbs",
+          "text": "<!DOCTYPE html>\n<html {{{lang}}}>\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=792\">\n<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n{{{metaSeo}}}\n\n<!-- html generated by pub-server from markdown {{_file.path}} -->\n\n<title>{{title}}</title>\n{{{injectCss}}}\n</head>\n<body class=\"list\">\n{{{renderLayout}}}\n\n{{{injectJs}}}\n{{{comment \"photoCredit\"}}}\n{{{comment \"copyright\"}}}\n</body>\n</html>\n"
+        },
+        {
+          "path": "/main-layout.hbs",
+          "text": "<div {{{layout-class}}} {{{rtl}}}>\n\n<nav id=\"nav\">\n<ul><li>{{menu}}\n<ul>\n{{#eachPage~}}\n<li>{{{pageLink}}}</li>\n{{/eachPage~}}\n</ul>\n</li></ul>\n</nav>\n\n{{{renderPage}}}\n{{{githubBadge}}}\n</div>\n"
+        }
+      ]
+    },
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-seo/src",
+      "fragmentDelim": 1,
+      "_pkg": "pub-pkg-seo",
+      "name": "src",
+      "type": "FILE",
+      "watch": false,
+      "files": [
+        {
+          "path": "/pages",
+          "text": "---- /robots.txt ----\nnocrawl:1\nnolayout:1\ntemplate:robots.txt\naccess:everyone\n\n---- /sitemap.xml ----\nnocrawl:1\nnolayout:1\ntemplate:sitemap.xml\n"
+        },
+        {
+          "path": "/robots.txt.hbs",
+          "text": "user-agent: *\n{{#ifOption 'noRobots'}}\ndisallow: /\n{{else}}\nallow: /\n{{/ifOption}}\n"
+        },
+        {
+          "path": "/sitemap.xml.hbs",
+          "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n{{#eachPage~}}\n<url><loc>{{fqurl}}</loc></url>\n{{/eachPage}}\n</urlset>\n"
+        }
+      ]
+    },
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/src",
+      "route": "/pub",
+      "_pkg": "pub-pkg-editor",
+      "name": "_src",
+      "type": "FILE",
+      "watch": false,
+      "fragmentDelim": true,
+      "files": [
+        {
+          "path": "/index.md",
+          "text": "---- / ----\nname: pub-server\ndoclayout: pub/editor-layout\n"
+        },
+        {
+          "path": "/editor-layout.hbs",
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>pub editor</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/pub/css/normalize.css\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/pub/css/editor.css\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/pub/humane-js/flatty.css\">\n</head>\n<body>\n<div class=\"handle leftright\"></div>\n\n<div class=\"outer col\">\n\n<div class=\"header row\">\n  <!--div class=\"menubutton col clickable\"> ☰ </div-->\n  <div class=\"savebutton col clickable hide\" title=\"save\"> ✓ </div>\n  <div class=\"name col\"></div>\n  <div class=\"editbutton col clickable\" title=\"fragments\"> ✍ </div>\n  <!--div class=\"helpbutton col clickable\" title=\"help\"> ? </div-->\n</div>\n\n<div class=\"main row\">\n  <div class=\"editorpane left col\">\n    <div class=\"list row shadow\"></div>\n    <!--iframe class=\"form row shadow\" src=\"{{relPath}}/admin/upload\"></iframe-->\n    <textarea class=\"editor row\"></textarea></div>\n  <div class=\"previewpane right col\"><iframe class=\"preview\" src=\"{{relPath}}/\"></iframe></div>\n</div>\n\n</div>\n<script>window.pubRef = {\"href\":\"/pub/\",\"relPath\":\"..\"};</script>\n<script src=\"{{relPath}}/js/jquery-1.11.3.min.js\"></script>\n<script src=\"{{relPath}}/pub/js/editor-ui.js\"></script>\n<script src=\"{{relPath}}/pub/_generator.js\"></script>\n\n</body>\n</html>\n"
+        },
+        {
+          "path": "/editor-updates.hbs",
+          "text": "<ul>\n{{#each diffs}}\n<li title=\"{{difftext}}\" data-file=\"{{file}}\">{{diffpage}}</li>\n{{/each}}\n</ul>\n"
+        },
+        {
+          "path": "/editor-upload.hbs",
+          "text": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>pub editor - {{title}}</title>\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/css/normalize.css\">\n<link rel=\"stylesheet\" href=\"{{relPath}}/css/editor.css\">\n</head>\n<body>\n<div class=\"upload\">\n<h3>{{title}}</h3>\n<form method=\"POST\" enctype=\"multipart/form-data\">\n{{{html}}}\n</form>\n{{#eachUpload}}<pre>![](/images/{{{title}}}){{s3Err}}\n</pre>\n<img src=\"{{option 'fqImages'}}/images/{{title}}\"><br>\n{{option 'fqImages'}}/images/{{title}}\n{{/eachUpload}}\n</div>\n<script src=\"{{relPath}}/pub/js/jquery-1.11.3.min.js\"></script>\n</body>\n</html>\n"
+        }
+      ]
+    }
+  ],
+  "staticPaths": [
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/static",
+      "watch": {},
+      "route": "/",
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/hamphackdeck/static"
+      }
+    },
+    {
+      "path": ".gitignore",
+      "watch": {},
+      "route": "/",
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "."
+      }
+    },
+    {
+      "path": ".nojekyll",
+      "watch": {},
+      "route": "/",
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "."
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-jquery/js/jquery-1.11.3.min.js",
+      "route": "/js",
+      "inject": true,
+      "maxAge": "30d",
+      "_pkg": "pub-pkg-jquery",
+      "watch": false,
+      "depth": 5,
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "30d",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-jquery/js"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core/shower.min.js",
+      "route": "/shower",
+      "inject": true,
+      "_pkg": "pub-theme-shower-ribbon",
+      "watch": false,
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/styles/screen.css",
+      "route": "/shower/ribbon/styles",
+      "inject": true,
+      "_pkg": "pub-theme-shower-ribbon",
+      "watch": false,
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/styles"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/css/pub-theme-shower-ribbon.css",
+      "route": "/css",
+      "inject": true,
+      "_pkg": "pub-theme-shower-ribbon",
+      "watch": false,
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/css"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/images",
+      "route": "/shower/ribbon/images",
+      "_pkg": "pub-theme-shower-ribbon",
+      "watch": false,
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/images"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/fonts",
+      "route": "/shower/ribbon/fonts",
+      "_pkg": "pub-theme-shower-ribbon",
+      "watch": false,
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/fonts"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core/License.md",
+      "route": "/shower",
+      "_pkg": "pub-theme-shower-ribbon",
+      "watch": false,
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/License.md",
+      "route": "/shower/ribbon",
+      "_pkg": "pub-theme-shower-ribbon",
+      "watch": false,
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-highlight/css/highlight-github-0.2.3.css",
+      "route": "/css",
+      "inject": true,
+      "maxAge": "30d",
+      "_pkg": "pub-pkg-highlight",
+      "watch": false,
+      "depth": 5,
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "30d",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-highlight/css"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-highlight/js/highlight-0.2.3.min.js",
+      "route": "/js",
+      "inject": true,
+      "maxAge": "30d",
+      "_pkg": "pub-pkg-highlight",
+      "watch": false,
+      "depth": 5,
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "30d",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-highlight/js"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-highlight/js/pub-pkg-highlight-0.2.3.js",
+      "route": "/js",
+      "inject": true,
+      "maxAge": "30d",
+      "_pkg": "pub-pkg-highlight",
+      "watch": false,
+      "depth": 5,
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "30d",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-highlight/js"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/static/css",
+      "route": "/pub/css",
+      "_pkg": "pub-pkg-editor",
+      "watch": false,
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/static/css"
+      }
+    },
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes/flatty.css",
+      "route": "/pub/humane-js",
+      "_pkg": "pub-pkg-editor",
+      "watch": false,
+      "depth": 5,
+      "maxAge": "10m",
+      "includeBinaries": true,
+      "sendOpts": {
+        "maxAge": "10m",
+        "dotfiles": "ignore",
+        "index": false,
+        "extensions": false,
+        "root": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/node_modules/humane-js/themes"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/out",
+      "relPaths": true,
+      "name": "out",
+      "writable": true,
+      "type": "FILE",
+      "tmp": "/Users/jldec/.tmp/out",
+      "watch": {}
+    }
+  ],
+  "browserScripts": [
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-editor/client/editor-ui.js",
+      "route": "/pub/js/editor-ui.js",
+      "_pkg": "pub-pkg-editor"
+    },
+    {
+      "path": "/Users/jldec/pub/preview/pub-preview.js",
+      "route": "/pub/js/pub-preview.js",
+      "_pkg": "pub-pkg-editor"
+    }
+  ],
+  "generatorPlugins": [
+    {
+      "path": "/Users/jldec/pub/server/node_modules/pub-pkg-seo/generator-plugin.js",
+      "_pkg": "pub-pkg-seo"
+    },
+    {
+      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/plugins/generator-plugin.js",
+      "_pkg": "pub-theme-shower-ribbon"
+    }
+  ],
+  "serverPlugins": [],
+  "injectCss": [
+    {
+      "path": "/shower/ribbon/styles/screen.css"
+    },
+    {
+      "path": "/css/pub-theme-shower-ribbon.css"
+    },
+    {
+      "path": "/css/highlight-github-0.2.3.css"
+    },
+    {
+      "path": "/css/extra.css"
+    }
+  ],
+  "injectJs": [
+    {
+      "path": "/js/jquery-1.11.3.min.js"
+    },
+    {
+      "path": "/shower/shower.min.js"
+    },
+    {
+      "path": "/js/highlight-0.2.3.min.js"
+    },
+    {
+      "path": "/js/pub-pkg-highlight-0.2.3.js"
+    },
+    {
+      "path": "/pub/pub-ux.js"
+    }
+  ],
+  "pkgs": [
+    {
+      "path": "pub-pkg-jquery",
+      "pkgJson": {
+        "name": "pub-pkg-jquery",
+        "version": "1.11.3",
+        "description": "pub-server package to inject jQuery",
+        "main": "pub-config.js",
+        "dependencies": {},
+        "keywords": [
+          "publish",
+          "jquery"
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/jldec/pub-pkg-jquery.git"
+        },
+        "author": "jurgen leschner",
+        "license": "MIT"
+      },
+      "pkgName": "pub-pkg-jquery",
+      "dir": "/Users/jldec/pub/server/node_modules/pub-pkg-jquery"
+    },
+    {
+      "path": "pub-theme-shower-ribbon",
+      "pkgJson": {
+        "name": "pub-theme-shower-ribbon",
+        "version": "1.7.2",
+        "description": "shower presentation theme for pub-server",
+        "main": "pub-config.js",
+        "dependencies": {
+          "shower-core": "~1.0.7",
+          "shower-ribbon": "~1.0.11"
+        },
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/jldec/pub-theme-shower-ribbon.git"
+        },
+        "author": "jurgen leschner",
+        "license": "MIT"
+      },
+      "pkgName": "pub-theme-shower-ribbon",
+      "dir": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon"
+    },
+    {
+      "path": "pub-pkg-highlight",
+      "pkgJson": {
+        "name": "pub-pkg-highlight",
+        "version": "0.2.4",
+        "description": "pub-server package for injecting highlight.js",
+        "main": "pub-config.js",
+        "dependencies": {},
+        "keywords": [
+          "publish",
+          "syntax",
+          "highlight"
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/jldec/pub-pkg-highlight.git"
+        },
+        "author": {
+          "name": "jurgen leschner"
+        },
+        "license": "MIT",
+        "gitHead": "4b555a4f5fed8f1d12e92ff8dbc53ed7beb3836c",
+        "bugs": {
+          "url": "https://github.com/jldec/pub-pkg-highlight/issues"
+        },
+        "homepage": "https://github.com/jldec/pub-pkg-highlight#readme",
+        "_id": "pub-pkg-highlight@0.2.4",
+        "scripts": {},
+        "_shasum": "4e68492ce6533d3afaa957e7aee12fd4af69fe78",
+        "_from": "pub-pkg-highlight@latest",
+        "_npmVersion": "2.12.1",
+        "_nodeVersion": "2.3.4",
+        "_npmUser": {
+          "name": "jldec",
+          "email": "jldec@ciaosoft.com"
+        },
+        "maintainers": [
+          {
+            "name": "jldec",
+            "email": "jldec@ciaosoft.com"
+          }
+        ],
+        "dist": {
+          "shasum": "4e68492ce6533d3afaa957e7aee12fd4af69fe78",
+          "tarball": "http://registry.npmjs.org/pub-pkg-highlight/-/pub-pkg-highlight-0.2.4.tgz"
+        },
+        "directories": {},
+        "_resolved": "https://registry.npmjs.org/pub-pkg-highlight/-/pub-pkg-highlight-0.2.4.tgz"
+      },
+      "pkgName": "pub-pkg-highlight",
+      "dir": "/Users/jldec/pub/server/node_modules/pub-pkg-highlight"
+    },
+    {
+      "path": "pub-pkg-seo",
+      "pkgJson": {
+        "name": "pub-pkg-seo",
+        "version": "1.0.1",
+        "description": "pub-server package for generating robots.txt and sitemap.xml",
+        "main": "pub-config.js",
+        "dependencies": {},
+        "keywords": [
+          "publish",
+          "seo",
+          "robots",
+          "sitemap"
+        ],
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/jldec/pub-pkg-seo.git"
+        },
+        "author": "jurgen leschner",
+        "license": "MIT"
+      },
+      "pkgName": "pub-pkg-seo",
+      "dir": "/Users/jldec/pub/server/node_modules/pub-pkg-seo"
+    },
+    {
+      "path": "pub-pkg-editor",
+      "pkgJson": {
+        "name": "pub-pkg-editor",
+        "version": "1.5.3",
+        "description": "simple markdown editor for pub-server",
+        "main": "pub-config.js",
+        "dependencies": {
+          "humane-js": "^3.2.2",
+          "pub-preview": "^1.3.1"
+        },
+        "devDependencies": {},
+        "repository": {
+          "type": "git",
+          "url": "git://github.com/jldec/pub-pkg-editor.git"
+        },
+        "author": "jurgen leschner",
+        "license": "MIT"
+      },
+      "pkgName": "pub-pkg-editor",
+      "dir": "/Users/jldec/pub/server/node_modules/pub-pkg-editor"
+    }
+  ],
+  "appUrl": "http://jldec.github.io/pub-sample-deck/",
+  "noRobots": 1,
+  "throttleReload": "1s",
+  "theme": {
+    "path": "pub-theme-shower-ribbon",
+    "pkgJson": {
+      "name": "pub-theme-shower-ribbon",
+      "version": "1.7.2",
+      "description": "shower presentation theme for pub-server",
+      "main": "pub-config.js",
+      "dependencies": {
+        "shower-core": "~1.0.7",
+        "shower-ribbon": "~1.0.11"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/jldec/pub-theme-shower-ribbon.git"
+      },
+      "author": "jurgen leschner",
+      "license": "MIT"
+    },
+    "pkgName": "pub-theme-shower-ribbon",
+    "dir": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon"
+  },
+  "_resolved": true,
+  "production": false,
+  "port": "3001",
+  "fqImages": "",
+  "linkNewWindow": false,
+  "staticHost": true
+}
