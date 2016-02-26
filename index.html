@@ -102,7 +102,7 @@ write some more code
 <div data-render-html="/#fragment-7"><h1 id="github-demo">GitHub Demo</h1>
 <pre><code class="lang-diff">First create a new repo at github.com
 - git remote add origin &lt;github-repo-url&gt;
-- git push
+- git push origin &lt;branch&gt;
 Someone else on a different machine
 - git clone &lt;github-repo-url&gt;
 - git push
@@ -123,6 +123,7 @@ Use branches and pull requests to coordinate
 <section id="fragment-9" class="slide background-image"><div>
 <div data-render-html="/#fragment-9"><h1 id="github-pages-demo">GitHub Pages Demo</h1>
 <pre><code class="lang-diff">- git init
+write code, git add, git commit
 - git branch -m gh-pages
 Push to new GitHub repo
 
@@ -157,15 +158,15 @@ git commit, push etc.
 
 <section id="fragment-12" class="slide background-image"><div>
 <div data-render-html="/#fragment-12"><h1 id="pub-server-demo">pub-server demo</h1>
-<pre><code class="lang-diff">this requires node.js
-- npm install -g pub-server
-- git clone https://github.com/jldec/pub-sample-deck.git pub;
+<pre><code class="lang-diff">- npm install -g pub-server
+- git clone &lt;github&gt;/jldec/pub-sample-deck.git pub;
 - cd pub; pub
 edit markdown, watch http://localhost:3001/
 - pub -O
 - cd out
 - git init
-- git branch -m gh-pages
+- git add, git commit, git branch -m gh-pages
+push to a new repo on GitHub
 </code></pre>
 </div>
 <img src="./images/plane.jpg" alt="" full="1">
