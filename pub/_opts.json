@@ -6,7 +6,7 @@
   "no-sockets": true,
   "editor": true,
   "user": "jldec",
-  "basedir": "/Users/jldec/pub/hamphackdeck",
+  "basedir": "/Users/jldec/github/hamphackdeck",
   "pkgJson": {
     "name": "pub-sample-deck",
     "version": "2.0.2",
@@ -32,7 +32,7 @@
   "pkgName": "pub-sample-deck",
   "sources": [
     {
-      "path": "/Users/jldec/pub/hamphackdeck/markdown",
+      "path": "/Users/jldec/github/hamphackdeck/markdown",
       "glob": "**/*.md",
       "writable": true,
       "name": "markdown",
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/templates",
+      "path": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/templates",
       "_pkg": "pub-theme-shower-ribbon",
       "name": "templates",
       "type": "FILE",
@@ -120,7 +120,7 @@
   ],
   "staticPaths": [
     {
-      "path": "/Users/jldec/pub/hamphackdeck/static",
+      "path": "/Users/jldec/github/hamphackdeck/static",
       "watch": {},
       "route": "/",
       "depth": 5,
@@ -131,7 +131,7 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jldec/pub/hamphackdeck/static"
+        "root": "/Users/jldec/github/hamphackdeck/static"
       }
     },
     {
@@ -182,7 +182,7 @@
       }
     },
     {
-      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core/shower.min.js",
+      "path": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core/shower.min.js",
       "route": "/shower",
       "inject": true,
       "_pkg": "pub-theme-shower-ribbon",
@@ -195,11 +195,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core"
+        "root": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core"
       }
     },
     {
-      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/styles/screen.css",
+      "path": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/styles/screen.css",
       "route": "/shower/ribbon/styles",
       "inject": true,
       "_pkg": "pub-theme-shower-ribbon",
@@ -212,11 +212,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/styles"
+        "root": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/styles"
       }
     },
     {
-      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/css/pub-theme-shower-ribbon.css",
+      "path": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/css/pub-theme-shower-ribbon.css",
       "route": "/css",
       "inject": true,
       "_pkg": "pub-theme-shower-ribbon",
@@ -229,11 +229,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/css"
+        "root": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/css"
       }
     },
     {
-      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/images",
+      "path": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/images",
       "route": "/shower/ribbon/images",
       "_pkg": "pub-theme-shower-ribbon",
       "watch": false,
@@ -245,11 +245,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/images"
+        "root": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/images"
       }
     },
     {
-      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/fonts",
+      "path": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/fonts",
       "route": "/shower/ribbon/fonts",
       "_pkg": "pub-theme-shower-ribbon",
       "watch": false,
@@ -261,11 +261,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/fonts"
+        "root": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/fonts"
       }
     },
     {
-      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core/License.md",
+      "path": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core/License.md",
       "route": "/shower",
       "_pkg": "pub-theme-shower-ribbon",
       "watch": false,
@@ -277,11 +277,11 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core"
+        "root": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-core"
       }
     },
     {
-      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/License.md",
+      "path": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon/License.md",
       "route": "/shower/ribbon",
       "_pkg": "pub-theme-shower-ribbon",
       "watch": false,
@@ -293,7 +293,7 @@
         "dotfiles": "ignore",
         "index": false,
         "extensions": false,
-        "root": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon"
+        "root": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/node_modules/shower-ribbon"
       }
     },
     {
@@ -382,7 +382,7 @@
   ],
   "outputs": [
     {
-      "path": "/Users/jldec/pub/hamphackdeck/out",
+      "path": "/Users/jldec/github/hamphackdeck/out",
       "relPaths": true,
       "name": "out",
       "writable": true,
@@ -409,7 +409,7 @@
       "_pkg": "pub-pkg-seo"
     },
     {
-      "path": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon/plugins/generator-plugin.js",
+      "path": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon/plugins/generator-plugin.js",
       "_pkg": "pub-theme-shower-ribbon"
     }
   ],
@@ -472,7 +472,7 @@
       "path": "pub-theme-shower-ribbon",
       "pkgJson": {
         "name": "pub-theme-shower-ribbon",
-        "version": "1.7.2",
+        "version": "1.7.3",
         "description": "shower presentation theme for pub-server",
         "main": "pub-config.js",
         "dependencies": {
@@ -487,7 +487,7 @@
         "license": "MIT"
       },
       "pkgName": "pub-theme-shower-ribbon",
-      "dir": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon"
+      "dir": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon"
     },
     {
       "path": "pub-pkg-highlight",
@@ -595,7 +595,7 @@
     "path": "pub-theme-shower-ribbon",
     "pkgJson": {
       "name": "pub-theme-shower-ribbon",
-      "version": "1.7.2",
+      "version": "1.7.3",
       "description": "shower presentation theme for pub-server",
       "main": "pub-config.js",
       "dependencies": {
@@ -610,7 +610,7 @@
       "license": "MIT"
     },
     "pkgName": "pub-theme-shower-ribbon",
-    "dir": "/Users/jldec/pub/hamphackdeck/node_modules/pub-theme-shower-ribbon"
+    "dir": "/Users/jldec/github/hamphackdeck/node_modules/pub-theme-shower-ribbon"
   },
   "_resolved": true,
   "production": false,
